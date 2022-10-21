@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+       <!-- CHARSET -->
+   <meta charset="UTF-8">
+   <!-- IE-EDGE -->
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!-- VIEWPORT -->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- DESCRIPTION -->
+
+   <!-- AUTHOR -->
+   <meta name="author" content="Marcos Cojulun">
+   <link rel="stylesheet" href="./css/login.css">
+   <!-- ICONS FONT AWESOME -->
+   <script src="https://kit.fontawesome.com/73f851add2.js" crossorigin="anonymous"></script>
+    <title>Libreria Brooklyn</title>
+    
+        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    
+        <!-- font awesome cdn link  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+        <!-- custom css file link  -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="login.html">
+        <link rel="stylesheet" href="index.html">
+        <link rel="stylesheet" href="arrivals.html">
+        <link rel="stylesheet" href="review.html">
+        <link rel="stylesheet" href="marcas.html">
+
+<head>
+</head>
+
+<header class="header">
+
+    <div class="header-1">
+
+        <a href="home.html" class="logo"> <i class="fas fa-book"></i> Libreria Brooklyn </a>
+
+        <form action="" class="search-form">
+            <input type="Buscar" name="" placeholder="Buscar aqui..." id="search-box">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="icons">
+            <div id="search-btn" class="fas fa-search"></div>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <div id="login-btn" class="fas fa-user"></div>
+        </div>
+
+    </div>
+
+    <div class="header-2">
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="marcas.html">Marcas</a>
+            <a href="arrivals.html">Mercaderia nueva</a>
+            <a href="review.html">Lo mas visto</a>
+            <a href="#blogs">blogs</a>
+            <a href="login.html">login</a>
+        </nav>
+    </div>
+
+</header>
+
+<!-- header section ends -->
+
+   
+</head>
+<body>
+<!-- MAIN -->
+<main>
+    <!-- FORMULARIO -->
+    <form action="#" class="formulario" id="formulario">
+        <!-- GRUPO DE USUARIO -->
+        <div class="formulario__grupo" id="grupo__usuario">
+            <label class="formulario__label">Nombre de usuario</label>
+            <div class="formulario__grupo-input">
+                <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="nombre">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">El usuario debe tener minimo 4 caracteres y solo se admiten números, letras y guión bajo.</p>
+        </div>
+
+        
+        <!-- GRUPO DE NOMBRE-->
+        <div class="formulario__grupo" id="grupo__nombre">
+            <label class="formulario__label">Apellidos</label>
+            <div class="formulario__grupo-input">
+                <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="apellidos">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">El nombre debe tener minimo 4 caracteres y solo se admiten números, letras y guión bajo.</p>
+        </div>
+
+
+        <!-- GRUPO DE CONTRASEÑA 1-->
+        <div class="formulario__grupo" id="grupo__password">
+            <label class="formulario__label">Contraseña</label>
+            <div class="formulario__grupo-input">
+                <input type="password" class="formulario__input" name="password" id="password" placeholder="****">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">La contraseña debe ser de 4 a 12 digitos</p>
+        </div>
+
+
+        <!-- GRUPO DE CONTRASEÑA 2-->
+        <div class="formulario__grupo" id="grupo__password2">
+            <label class="formulario__label">Repetir la contraseña</label>
+            <div class="formulario__grupo-input">
+                <input type="password" class="formulario__input" name="password2" id="password2" placeholder="****">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">La contraseña no coincide</p>
+        </div>
+
+
+        <!-- GRUPO DE EMAIL -->
+        <div class="formulario__grupo" id="grupo__correo">
+            <label class="formulario__label">Correo Electonico</label>
+            <div class="formulario__grupo-input">
+                <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@mail.com">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">El correo debe tener mÍnimo 4 caracteres y sólo se admiten números, letras y guión bajo.</p>
+        </div>
+
+
+        <!-- GRUPO DE TELÉFONO -->
+        <div class="formulario__grupo" id="grupo__telefono">
+            <label class="formulario__label">Teléfono</label>
+            <div class="formulario__grupo-input">
+                <input type="telefono" class="formulario__input" name="telefono" id="telefono" placeholder="0123456789">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">El número debe tener 10 digitos</p>
+        </div>
+
+
+        <!-- GRUPO TERMINOS Y CONDICIONES -->
+        <div class="formulario__grupo formulario__grupo-terminos" id="grupo__terminos">
+            <label class="formulario__label">
+                <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                <b class="formulario__span">Acepto los terminos y condiciones</b>
+            </label>
+        </div>
+        
+        <!-- MENSAJE DE CAMPOS REQUERIDOS -->
+        <div class="formulario__mensaje" id="formulario__mensaje">
+            <p><i class="fas fa-exclamation-circle"> <b>Error:</b> Debes completar todos los campos</i></p>
+        </div>
+
+
+        <!-- GRUPO ENVIAR -->
+        <div class="formulario__grupo formulario__grupo-btn-enviar">
+            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">El formulario se envió correctamente</p>
+            <input class="formulario__btn" type="submit" value="Enviar">
+        </div>
+    </form>
+</main>
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
